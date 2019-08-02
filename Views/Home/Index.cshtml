@@ -1,0 +1,43 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1>ENTER CITY, REGION OR COUNTRY</h1>
+
+<form action="/Home/Search" method="post">
+    <input type="text" name="city" placeholder="City Name">
+    </hr>
+    <input type="submit" value="Search"><br />
+</form>
+
+<hr />
+
+<h5>ADD A PLACES</h5>
+<form action="/Home/AddPlace" method="post">
+    <input type="text" name="placename" placeholder="Name">
+    <input type="text" name="date" placeholder="Date Visited">
+    <input type="submit" value="Add"><br />
+</form>
+
+<br />
+
+<h5>DELETE</h5>
+<form action="/Home/DeletePlace" method="post">
+    <input type="text" name="placename" placeholder="Name">
+    <input type="submit" value="Delete"><br />
+</form>
+
+<br />
+
+<h5>UPDATE PLACES DATA</h5>
+<form action="/Home/UpdatePlace" method="post">
+    <input type="text" name="placename" placeholder="Name">
+    <input type="text" name="date" placeholder="Date Visited">
+    <input type="submit" value="Update"><br />
+</form>
+
+<style>
+    body {
+        background-image: url("images.jpg");
+    }
+</style>

@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Places";
+}
+
+<h2>Your Places</h2>
+
+<hr />
+
+<style>
+    body {
+        background-image: url("images.jpg");
+    }
+</style>
+
+@{int i = 0;}
+@foreach (var places in ViewBag.display)
+{
+
+    <table border="0" cellpadding="0" cellspacing="0" style="width:25%;float:left">
+        <tbody>
+
+            @foreach (var item in places)
+            {
+                <tr>
+                    <td>@item</td>
+                </tr>
+                i++;
+            }
+        </tbody>
+    </table>
+
+}
